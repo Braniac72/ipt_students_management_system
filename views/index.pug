@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title IPT STUDENTS MANAGEMENT SYSTEM
+    link(rel='stylesheet', href='/css/login.css')
+    
+     
+
+  body
+    .container
+      h1 IPT STUDENTS MANAGEMENT SYSTEM
+      form#login-form
+        input#username.login-input(type='text', name='username', required='', placeholder='Username')
+        input#password.login-input(type='password', name='password', required='', placeholder='Password')
+        button(type='submit', formaction='/Dashboard') Login
+        p
+          a(href='#') Forget password
+
+        a(href='/personal_info', class='button-link') Register
+
+      p Copyright &copy; 2024 IPT Student Management system. All rights reserved.
+    script(src='scripts.js')

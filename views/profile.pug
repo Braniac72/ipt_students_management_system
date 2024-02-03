@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title IPT STUDENTS MANAGEMENT SYSTEM
+    link(rel='stylesheet', href='/css/Dashboard.css')
+
+  body
+    nav
+      ul
+        li
+          a(href='/Dashboard') Dashboard
+        li
+          a(href='/profile') Profile
+        li
+          a(href='/assessment') Assessment
+        li
+          a(href='/') logout
+
+    main
+      h1 Profile
+      p
+        | Welcome to the IPT StudentS Management system Dashboard. Here you can view and manage student information, assessments, and personal details. Use the navigation panel at the left to access different parts of the dashboard.
+
+      h2 Recent Activity
+      ul
+        li
+          a(href='#') Student 1: Assessment submitted
+
+
+    footer
+      p Copyright &copy; 2024 IPT Student Management system. br All rights reserved.
+
+    script(src='scripts.js')

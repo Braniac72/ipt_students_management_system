@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Student Registration Form
+    link(rel='stylesheet', href='/css/personal_info.css')
+  body
+    .container
+      h1 Student Information Form
+      form#student-info-form
+        .personal-info
+          h2 Personal Information Form
+          .input-field
+            br
+            input#first-name(type='text', name='first-name', required='', placeholder='First Name')
+          .input-field
+            br
+            input#Last-name(type='text', name='Last-name', required='', placeholder='Last Name')
+          .input-field
+            br
+            input#email(type='email', name='email', required='', placeholder='Email')
+          .input-field
+            br
+            input#phone-number(type='tel', name='phone-number', required='', placeholder='Phone Number')
+          .input-field
+            br
+            input#phone-number(type='text', name='password', required='', placeholder='Enter your password')
+          .input-field
+            br
+            input#phone-number(type='text', name='rep-password', required='', placeholder='Re-enter your password')
+            
+        button(type='submit', formaction='/IPT_info') Next
+    script(src='scripts.js')

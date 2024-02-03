@@ -1,0 +1,82 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+  input {
+    margin-bottom: 20px;
+    
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  p a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  .login-input{
+    width: 70%;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+  }
+  .login-input::selection{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+  }
+  .button-link {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #4285f4; /* Choose your desired background color */
+    color: #ffffff; /* Choose your desired text color */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Center the text horizontally */
+    line-height: 20px; /* Adjust the line height for vertical centering */
+}

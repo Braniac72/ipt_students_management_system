@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/staff.css')
+    title Staff Registration Form
+  body
+    form
+      h2 STAFF INFORMATION FORM
+      input#fname(type='text', name='fname', placeholder='First Name')
+      br
+      br
+      input#lname(type='text', name='lname', placeholder='Last Name')
+      br
+      br
+      input#email(type='email', name='email', placeholder='Email')
+      br
+      br
+      input#mobile(type='tel', name='mobile', placeholder='Phone Number')
+      br
+      select#department.drop_down(name='department')
+        option ---Choose Department---
+        option(value='computer_science') Computer Science
+        option(value='electrical_engineering') Electrical Engineering
+        option(value='Civil Engineering') Civil Engineering
+        option(value='mechanical_engineering') Mechanical Engineering
+        option(value='Electronics and Telecommunication Engineering') Electronics and Telecommunication Engineering
+        option(value='General studies') General studies 
+        option(value='Petroleum Engineering') Petroleum Engineering
+        option(value='Multimedia') Multimedia
+        option(value='Labaratory Science') Labaratory Science
+        // Add more options as needed
+      
+    
+      br
+      input#password(type='text', name='password', placeholder='Enter your password')
+      br
+     
+      input(type='submit', value='Submit' href='/submitstaffinfo')

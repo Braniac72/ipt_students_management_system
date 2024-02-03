@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Student Registration Form
+    link(rel='stylesheet', href='/css/IPT_info.css')
+  body
+    .container
+      h1 IPT  Information
+      form#class-info-form
+        input#registration-number(type='text', name='registration-number', required='', placeholder='Registration Number')
+        input#class(type='text', name='class', required='', placeholder='Class')
+        input#IPT-organization(type='text', name='IPT-organization', required='', placeholder='IPT Organization')
+        input#region(type='text', name='region', required='', placeholder='Region')
+        input#district(type='text', name='district', required='', placeholder='District')
+        input#Street(type='text', name='Street', required='', placeholder='Street')
+        input#external-supervisor(type='text', name='external-supervisor', required='', placeholder='External Supervisor')
+        input#email(type='email', name='email', required='', placeholder='Email')
+        input#designation(type='text', name='designation', required='', placeholder='Designation/Rank')
+        input#phone-number(type='tel', name='phone-number', required='', placeholder='Phone Number')
+        input#jubmitt(type='text', name='jubmitt', required='', placeholder='')
+        button(type='submit' formaction='/') Submit
+        p
+          a(href='/personal_info') Back to previous page
+    script(src='scripts.js')
